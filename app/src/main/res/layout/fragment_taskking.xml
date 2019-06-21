@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_f5f5f5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_27"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/task_saixuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="筛选"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/sp_14"
+            android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="业绩之王——每月之星"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/c_000000"
+      />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/choice_paiming"
+            android:padding="@dimen/dp_2"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+           >
+            <View
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="match_parent"
+                android:background="@drawable/task_shape_topview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:gravity="center"
+                    android:textColor="@color/c_ffffff"
+                    android:layout_weight="1"
+                    android:text="团队"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_10"
+                    android:gravity="center"
+                    android:textColor="@color/c_ffffff"
+                    android:layout_weight="1"
+                    android:text="个人"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_gravity="center"
+        android:background="@drawable/task_top_shape"
+        android:layout_height="30dp">
+
+        <View
+            android:id="@+id/task_view"
+            android:layout_width="94dp"
+            android:layout_height="24dp"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/task_shape_topview"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@null"
+            >
+
+            <TextView
+                android:id="@+id/task_top_text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/sp_10"
+                android:background="@null"
+                android:textColor="@color/c_ffffff"
+                android:text="任务完成"/>
+
+            <TextView
+                android:id="@+id/task_top_text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/c_ffffff"
+                android:text="任务达标"/>
+
+            <TextView
+                android:id="@+id/task_top_text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/c_ffffff"
+                android:text="任务挑战"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/mviewpager"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

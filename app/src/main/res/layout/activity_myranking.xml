@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5f5f5"
+    android:orientation="vertical">
+     <include layout="@layout/layout_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:background="@color/c_ffffff"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_13"
+        android:paddingLeft="@dimen/dp_13">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/task_image_db"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务达标量"
+            android:textSize="@dimen/sp_22"
+            android:textColor="@color/c_000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_42"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:textColor="@color/c_000000"
+            android:text="85"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:background="@color/c_ffffff"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_13"
+        android:paddingLeft="@dimen/dp_13">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/task_image_mb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务目标量"
+            android:textSize="@dimen/sp_22"
+            android:textColor="@color/c_000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_42"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:textColor="@color/c_000000"
+            android:text="85"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:background="@color/c_ffffff"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_13"
+        android:paddingLeft="@dimen/dp_13">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/task_image_fb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务发布量"
+            android:textSize="@dimen/sp_22"
+            android:textColor="@color/c_000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_42"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:textColor="@color/c_000000"
+            android:text="85"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

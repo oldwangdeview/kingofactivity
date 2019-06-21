@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_15"
+    android:background="@color/c_ffffff">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:id="@+id/listview"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:gravity="right">
+        <Button
+            android:id="@+id/ok_btuuton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/challengettask_shape_button"
+            android:text="确认"
+            android:textColor="@color/c_ffffff"
+            />
+    </LinearLayout>
+</LinearLayout>

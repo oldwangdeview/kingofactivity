@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">业绩之王</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">任务王</string>
+    <string name="title_notifications">我的</string>
+
+
+    <string name="help">退出</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="exite_dialog">再按一次退出程序！</string>
+    <string name="settings">设置</string>
+    <string name="choice_language_title">请选择习惯语言</string>
+    <string name="choice_language_choicetext">请选择习惯语言</string>
+    <string name="choice_language_choicebottom_text">© 翻译通</string>
+    <string name="returntext">返回</string>
+    <string name="nomessage">暂时没有内容哦</string>
+    <string name="net_error">糟糕，加载失败</string>
+    <string name="getmessage_agin">重新加载</string>
+    <string name="tackphoto">拍照</string>
+    <string name="imagelist">本地相册</string>
+    <string name="update_seccese">修改成功</string>
+    <string name="dialog_message">是否退出登录？</string>
+    <string name="getcode_code_startcode">S后重新获取</string>
+    <string name="translate_text_quxiao">取消</string>
+</resources>

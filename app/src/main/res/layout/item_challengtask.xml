@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    android:padding="@dimen/dp_5"
+    android:background="@drawable/item_challengettask_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tasklist_item_sq"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/c_000000"
+            android:text="4月销售计划"/>
+        <TextView
+            android:id="@+id/addtime_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="3月20号   下午12：30"
+            android:gravity="right"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/fab_username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="发布人名字"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="800"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="2019年3月30号——2019年4月30号"/>
+
+        <Button
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_ffffff"
+            android:gravity="center"
+            android:background="@drawable/challengettask_shape_button"
+            android:text="未接受"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

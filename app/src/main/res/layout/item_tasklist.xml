@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dp_5"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5"
+    android:background="@color/c_ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_7"
+        android:background="@color/c_f5f5f5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_5"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tasklist_item_sq"/>
+        <TextView
+            android:id="@+id/task_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5月销售任务"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textColor="@color/c_000000"
+            />
+
+        <TextView
+            android:id="@+id/task_list_titlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_13"
+            android:gravity="right"
+            android:text="3月26日 下午4：20"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_19"
+        android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/task_list_comqty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/c_000000"
+
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="10000元"
+        />
+
+        <TextView
+            android:id="@+id/task_tape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            android:textColor="#FFCC00"
+            android:text="剩余2天"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/task_list_missiontargetquantized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/c_000000"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:text="10000元"
+        />
+
+    <ProgressBar
+        android:id="@+id/myprogressbar"
+        android:layout_width="@dimen/dp_225"
+        android:layout_height="@dimen/dp_20"
+        android:max="100"
+        android:layout_marginTop="@dimen/dp_5"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:progress="1"
+        android:progressDrawable="@drawable/layer_list_progress_drawable"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_list_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/c_000000"
+            android:text="开始：2019年3月20号"
+            android:maxWidth="139dp"
+            />
+
+        <TextView
+            android:id="@+id/text_list_overtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/c_000000"
+            android:text="结束：2019年3月20号"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/ojbk_btn"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/dp_30"
+            android:text="已完成"
+            android:gravity="center"
+            android:textColor="@color/c_ffffff"
+            android:textSize="@dimen/sp_10"
+            android:background="@drawable/tasklist_shape_topview"
+           />
+    </LinearLayout>
+</LinearLayout>

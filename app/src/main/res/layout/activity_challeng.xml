@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_f5f5f5">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/choice_challengtask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp_16">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="选择任务"/>
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_999999"
+            android:text="请选择"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choice_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp_16">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="选择任务接收人"/>
+        <TextView
+            android:id="@+id/user_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_999999"
+            android:text="请选择"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp_16">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="输入PK金"/>
+        <EditText
+            android:id="@+id/inoput_okmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_999999"
+            android:hint="请选择"
+            android:background="@null"
+            android:inputType="number"
+            android:textColorHint="@color/c_999999"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp_16">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"
+            android:text="PK金说明"/>
+        <EditText
+            android:id="@+id/pk_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_999999"
+            android:hint="请选择"
+            android:background="@null"
+            android:textColorHint="@color/c_999999"
+            android:gravity="right"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@mipmap/challeng_image_bottom"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/pk_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="#ff999999"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:gravity="center"
+            android:textSize="@dimen/dp_24"
+            android:text="PK"
+            android:textColor="@color/c_ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

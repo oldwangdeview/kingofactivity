@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_f5f5f5">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--选择任务-->
+           <LinearLayout
+               android:id="@+id/choice_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_15">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/c_000000"
+            android:text="选择任务"/>
+
+
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_999999"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="请选择"/>
+
+
+    </LinearLayout>
+
+            <!--选择任务-->
+            <LinearLayout
+                android:id="@+id/layout_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:visibility="gone"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="主任务名"/>
+
+
+                <TextView
+                    android:id="@+id/task_name_choicedata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""/>
+
+
+            </LinearLayout>
+            <!--任务名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务名称"/>
+
+
+                <EditText
+                    android:id="@+id/taskname_inout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:cursorVisible="false"
+                    android:gravity="right"
+                    android:text=""
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textColorHint="@color/c_999999"/>
+
+
+            </LinearLayout>
+
+            <!--任务类型-->
+            <LinearLayout
+                android:id="@+id/choice_task_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务类型"/>
+
+
+                <TextView
+                    android:id="@+id/task_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择"/>
+
+
+            </LinearLayout>
+
+            <!--任务级别-->
+            <LinearLayout
+                android:id="@+id/choice_task_level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务级别"/>
+
+
+                <TextView
+                    android:id="@+id/task_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择"/>
+
+
+            </LinearLayout>
+
+
+
+            <!--任务级别-->
+            <LinearLayout
+                android:id="@+id/choice_task_dawei_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务单位"/>
+
+
+                <TextView
+                    android:id="@+id/task_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="明细"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:textColor="@color/c_999999"
+                android:textSize="@dimen/sp_15"/>
+            <!--开始时间-->
+            <LinearLayout
+                android:id="@+id/choice_starttime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="开始时间"/>
+
+
+                <TextView
+                    android:id="@+id/starttime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择开始时间"/>
+
+            </LinearLayout>
+            <!--结束时间-->
+            <LinearLayout
+                android:id="@+id/choice_endtime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/c_ffffff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="结束时间"/>
+
+
+                <TextView
+                    android:id="@+id/endtime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择结束时间"/>
+
+            </LinearLayout>
+            <!--任务说明-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/c_ffffff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:minHeight="@dimen/dp_80"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务说明"/>
+
+
+                <EditText
+                    android:id="@+id/input_task_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp_60"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:textColorHint="@color/c_999999"
+                    android:hint="请输入任务详情"/>
+
+            </LinearLayout>
+            <!--强制分配的输入界面-->
+            <LinearLayout
+                android:id="@+id/layout_type2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <!--任务完成总金额-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="任务完成总金额"/>
+
+
+                <EditText
+                    android:id="@+id/task_text_allmoeny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+
+                    android:gravity="right"
+                    android:background="@null"
+                    android:text=""
+
+                    />
+
+
+            </LinearLayout>
+            <!--奖金分配方式-->
+            <LinearLayout
+                android:id="@+id/choice_qzfp_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="奖金分配方式"/>
+
+
+                <TextView
+                    android:id="@+id/fp_money_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择"/>
+
+
+            </LinearLayout>
+            <!--超额完成总金额-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_19"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="超额完成总金额"/>
+
+
+                <EditText
+                    android:id="@+id/money_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+
+                    android:background="@null"
+
+                    android:gravity="right"
+                    android:text=""
+
+                 />
+
+
+            </LinearLayout>
+            <!--超额奖金分配方式-->
+            <LinearLayout
+                android:id="@+id/chaoe_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/c_000000"
+                    android:text="超额奖金分配方式"/>
+
+
+                <TextView
+                    android:id="@+id/chaoe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/c_999999"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="请选择"/>
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <!--自由领取的输入界面-->
+            <LinearLayout
+                android:id="@+id/layout_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <!--领取奖金总额-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/c_ffffff"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_15">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@color/c_000000"
+                        android:text="领取奖金总额"/>
+
+
+                    <TextView
+                        android:id="@+id/text_money_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/c_999999"
+                        android:layout_weight="1"
+                        android:cursorVisible="false"
+                        android:gravity="right"
+                        android:text=""
+
+                        />
+
+
+                </LinearLayout>
+                <!--奖金分配方式-->
+                <LinearLayout
+                    android:id="@+id/choice_jianjin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/c_ffffff"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_15">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@color/c_000000"
+                        android:text="奖金分配方式"/>
+
+
+                    <TextView
+                        android:id="@+id/msize_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/c_999999"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="请选择"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"/>
+
+        </LinearLayout>
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ojbk_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:textColor="@color/c_ffffff"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp_10"
+                android:background="#E1C66B"
+                android:textSize="@dimen/sp_24"
+                android:text="下一步"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:background="@mipmap/user_image_back"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/hean_image"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@mipmap/mrtx"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_ffffff"
+            android:layout_marginTop="@dimen/dp_10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_20">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="任务名称:"/>
+
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="发布人:"/>
+
+            <TextView
+                android:id="@+id/task_adduser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="目标业绩:"/>
+
+            <TextView
+                android:id="@+id/task_comqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="已完成业绩:"/>
+
+            <TextView
+                android:id="@+id/task_missqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center_vertical"
+                android:textColor="@color/c_666666"
+                android:text="完成进度:"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="@dimen/dp_170"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_10"
+                android:max="100"
+                android:layout_marginTop="@dimen/dp_5"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="20"
+                android:progressDrawable="@drawable/layer_list_progress_drawable"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="时间:"/>
+
+            <TextView
+                android:id="@+id/task_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dp_15">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_666666"
+                android:text="任务说明:"/>
+
+            <TextView
+                android:id="@+id/task_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_weidu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/weidu_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_ffffff"
+                android:text="维度回馈"
+                android:background="#FFCC00"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_taskfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="#E1C66B"
+        android:textSize="@dimen/sp_14"
+        android:layout_margin="@dimen/dp_14"
+        android:textColor="@color/c_ffffff"
+        android:text="回馈任务"/>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/c_ffffff"
+
+    android:orientation="vertical">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_5"
+    android:background="@color/c_f5f5f5"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_15"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:src="@drawable/round_image"/>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/c_000000"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:text="xx"/>
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_11"
+        android:textColor="@color/c_999999"
+        android:gravity="right"
+        android:text="sss"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/mubiaoliang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_11"
+        android:layout_marginLeft="@dimen/dp_43"
+        android:textColor="@color/c_000000"/>
+
+    <TextView
+        android:id="@+id/adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_43"
+        android:paddingRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_19"
+        android:textSize="@dimen/sp_11"
+        android:textColor="@color/c_000000"
+        android:text="李经理"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_7"
+        android:paddingLeft="@dimen/dp_43"
+        android:paddingBottom="@dimen/dp_11">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/time"
+            android:gravity="left"
+            android:textSize="@dimen/sp_11"
+            android:textColor="@color/c_000000"/>
+
+        <TextView
+            android:id="@+id/dabiaoguiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:text="达标规则"
+            android:background="@drawable/gettask_shape"
+            android:gravity="center"
+            android:textColor="@color/c_ffffff"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/dp_3"
+
+            />
+        <TextView
+            android:id="@+id/fenpei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:text="分配"
+            android:background="@drawable/gettask_shape"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/c_ffffff"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_3"
+
+            />
+
+
+        <TextView
+            android:id="@+id/linqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_11"
+            android:text="领取"
+            android:background="@drawable/gettask_shape"
+            android:gravity="center"
+            android:textColor="@color/c_ffffff"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_3"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

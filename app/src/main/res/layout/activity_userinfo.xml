@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_e5e5e5"/>
+
+    <LinearLayout
+        android:id="@+id/choice_heandimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_32"
+        android:paddingRight="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_17"
+            android:textColor="#2E2E2E"
+            android:text="头像"/>
+        
+        <ImageView
+            android:id="@+id/heandimage"
+            android:layout_width="@dimen/dp_41"
+            android:layout_height="@dimen/dp_41"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@mipmap/mrtx"/>
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou2"/>
+        
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_e5e5e5"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_32"
+        android:paddingRight="@dimen/dp_13"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:textColor="#2E2E2E"
+            android:text="昵称"/>
+
+        <EditText
+            android:id="@+id/nicename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_17"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="#A7A7A7"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou2"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_e5e5e5"/>
+
+
+    <LinearLayout
+        android:id="@+id/choice_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_32"
+        android:paddingRight="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:textColor="#2E2E2E"
+            android:text="性别"/>
+
+        <TextView
+            android:id="@+id/sex_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_17"
+            android:background="@null"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="#A7A7A7"
+            android:text="未知"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou2"/>
+
+    </LinearLayout>
+</LinearLayout>

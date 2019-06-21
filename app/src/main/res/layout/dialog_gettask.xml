@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_ffffff"
+    android:paddingLeft="@dimen/dp_50"
+    android:paddingRight="@dimen/dp_50"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:text="任务量"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/c_000000"/>
+
+    
+    <EditText
+        android:id="@+id/input_editext"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/gettask_dialog_input"
+        android:textSize="@dimen/sp_11"
+        android:textColorHint="@color/c_999999"
+        android:textColor="@color/c_000000"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/ojbk_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="@dimen/sp_11"
+        android:textColor="@color/c_ffffff"
+        android:background="@drawable/gettask_shape"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:layout_gravity="right" />
+
+</LinearLayout>

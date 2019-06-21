@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5f5f5"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+     
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/c_ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_13"
+        android:paddingRight="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/heandimage"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:src="@mipmap/mrtx"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/c_000000"
+                android:text="民以食为天"/>
+
+            <TextView
+                android:id="@+id/task_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textSize="12sp"
+                android:textColor="@color/c_999999"
+                android:text="任务完成"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--任务名称-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/c_ffffff"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="任务名称"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_12"/>
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/c_000000"
+
+            android:text="5月销售任务"/>
+
+    </LinearLayout>
+
+            <!--任务名称-->
+            <LinearLayout
+                android:id="@+id/zhutask_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@color/c_ffffff"
+                android:paddingLeft="@dimen/dp_16"
+                android:visibility="gone"
+                android:paddingRight="@dimen/dp_16"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="任务名称"
+                    android:textColor="@color/c_999999"
+                    android:textSize="@dimen/sp_12"/>
+                <TextView
+                    android:id="@+id/zhutask_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/c_000000"
+
+                    android:text="5月销售任务"/>
+
+            </LinearLayout>
+    <!--业绩目标-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:background="@color/c_ffffff"
+        android:layout_marginTop="@dimen/dp_4">
+
+
+        <LinearLayout
+            android:id="@+id/yejimubiao_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="业绩目标"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"/>
+
+            <TextView
+                android:id="@+id/yejimubiao_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="10000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wanchengyejie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="完成业绩额"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"/>
+
+            <TextView
+                android:id="@+id/wanchengyeji_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="10000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linquliang_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="领取量"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"/>
+
+            <TextView
+                android:id="@+id/linquliang_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="10000"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pk_money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="PK金上限"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"/>
+
+            <TextView
+                android:id="@+id/pkmoney_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="10000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="保证金"
+                />
+
+            <TextView
+                android:id="@+id/baozhen_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_000000"
+                android:textSize="@dimen/sp_12"
+                android:text="1000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="进度"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="@dimen/dp_175"
+                android:layout_height="@dimen/dp_20"
+                android:max="100"
+                android:layout_marginTop="@dimen/dp_5"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="1"
+                android:progressDrawable="@drawable/layer_list_progress_drawable"/>
+
+            <TextView
+                android:id="@+id/progress_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:visibility="gone"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--时间安排-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/c_ffffff">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/c_999999"
+            android:text="任务周期"/>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/c_000000"
+            android:text="2019年3月30号——2019年4月30号"/>
+
+    </LinearLayout>
+
+    <!--发布人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_19"
+        android:paddingLeft="@dimen/dp_16"
+        android:background="@color/c_ffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="发布人"/>
+            <TextView
+                android:id="@+id/adduser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="业务经理"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/task_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="任务奖金"/>
+            <TextView
+                android:id="@+id/task_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="￥500"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/chaoe_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="超额奖金"/>
+            <TextView
+                android:id="@+id/choae_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="￥500"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_999999"
+                android:text="任务说明"/>
+            <TextView
+                android:id="@+id/task_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/c_000000"
+                android:text="5月份必完成500任务超额2000奖励"/>
+        </LinearLayout>
+
+    </LinearLayout>
+            
+            
+            <com.scmsw.kingofactivity.view.MyGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:visibility="gone"
+                android:id="@+id/mygridview"></com.scmsw.kingofactivity.view.MyGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ojbk_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/challengettask_shape_button"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/c_ffffff"
+        android:text="支付保证金"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+
+
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listview">
+
+    </ListView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@drawable/challengettask_shape_button"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:text="确定"
+        android:id="@+id/queding_btn"
+        android:textColor="@color/c_ffffff"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+
+</LinearLayout>

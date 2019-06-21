@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_f5f5f5">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:orientation="horizontal"
+        android:background="@color/c_ffffff"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_5">
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tasklist_shape_top">
+
+
+            <View
+                android:id="@+id/topview"
+                android:layout_width="69dp"
+                android:layout_height="24dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/tasklist_shape_topview"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tasklist_weiguos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/c_f5f5f5"
+                    android:text="未过审"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/tasklist_notover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/c_f5f5f5"
+                    android:text="未完成"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/tasklist_over"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/c_f5f5f5"
+                    android:text="已完成"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/tasklist_zuofei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/c_f5f5f5"
+                    android:text="已作废"
+                    android:background="@null"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/mviewpager"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

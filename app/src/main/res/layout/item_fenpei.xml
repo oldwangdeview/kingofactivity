@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_14"
+        android:gravity="center_vertical"
+       >
+
+        <ImageView
+            android:id="@+id/image_text"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xuanz_taskuser"/>
+
+        <TextView
+            android:id="@id/text_name"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#050505"/>
+
+        <EditText
+            android:id="@+id/input_editext"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_20"
+            android:textSize="@dimen/sp_10"
+            android:paddingLeft="@dimen/dp_5"
+            android:inputType="number"
+            android:hint="输入目标量"
+            android:paddingRight="@dimen/dp_5"
+            android:visibility="gone"
+            android:background="@drawable/fenpei_item_shape"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="right">
+        <TextView
+            android:id="@+id/text_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择负责人"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            android:textColor="@color/c_383838"/>
+        <ImageView
+            android:layout_width="@dimen/sp_12"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou2"/>
+
+        <TextView
+            android:id="@+id/type_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_gravity="center_vertical"
+            android:text="*"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_e5e5e5"/>
+
+</LinearLayout>
